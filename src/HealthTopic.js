@@ -3,8 +3,7 @@ import "./HealthTopic.css";
 
 function HealthTopic({ title, imgUrl }) {
   return (
-    <div>
-      <h1>Health Category</h1>
+    <div className="topic">
       <h3>{title}</h3>
       <img src={imgUrl} alt="" />
     </div>
