@@ -2,13 +2,14 @@ import "./App.css";
 import React, { useEffect, useState } from "react";
 import HealthTopic from "./HealthTopic";
 
+
 function App() {
   const url = "https://health.gov/myhealthfinder/api/v3/topicsearch.json";
   const [healthTopics, setHealthTopics] = useState([]);
 
   useEffect(() => {
     getHealthInfo();
-  });
+  }, []);
 
   const getHealthInfo = async () => {
     const response = await fetch(url);
